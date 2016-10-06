@@ -1,0 +1,62 @@
+.wrap {
+	@extend %clearfix;
+	width: 100%;
+	margin: auto;
+	.container {
+		@extend %clearfix;
+		max-width: 1172px;
+		width: 100%;
+		margin: auto;
+	}
+}
+.title-section {
+	margin-top: 20px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	color: $color-2;
+	font-size: 30px;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		@include border-radius(5px);
+		height: 2px;
+		background: $color-5;
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		@include border-radius(5px);
+		width: 10%;
+		height: 4px;
+		background: $color-7;
+		top: -1px;
+		left: 45%;
+	}
+}
+.name-section {
+	font-family: $font-title;
+	font-size: 20px;
+	color: $color-7;
+}
+.desciption-section {
+	text-align: justify;
+	padding-top: 10px;
+	line-height: 20px;
+}
+.title-content {
+	padding: 5px 0;
+	font-size: 25px;
+	color: $color-7;
+}
+.toTop {
+	position: fixed;
+	right: 10px;
+	bottom: 50px;
+	img {
+		max-width: 50px;
+	}
+}

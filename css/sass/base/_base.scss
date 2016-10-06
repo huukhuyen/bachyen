@@ -1,0 +1,74 @@
+body {
+  font-family: $font-family-body;
+  color: $color-o;
+  font-size: 14px;
+}
+* {
+  @include box-sizing;
+}
+*:hover{
+    @include transition(all 400ms);
+}
+a {
+  color: inherit;
+  line-height: 0;
+  text-decoration: none;
+  &:hover {
+    color: $color-2;
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: $font-title;
+}
+img {
+  max-width: 100%;
+  min-height: 50px;
+}
+
+img:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: calc(100% + 10px);
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border: 2px dotted rgb(200, 200, 200);
+  border-radius: 5px;
+}
+
+img:after {
+  content: "\f127" " Hình ảnh " attr(alt) " bị hỏng ";
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-family: FontAwesome;
+  color: rgb(100, 100, 100);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+li,ol {
+  list-style: none;
+  &:focus {
+   border-color: $color-a;
+  }
+}
+button, input, a, .btn {
+  &:focus {
+    outline: none;
+  }
+}
+.bootstrap-select {
+  .btn:focus {
+    outline: none !important;
+  }
+}

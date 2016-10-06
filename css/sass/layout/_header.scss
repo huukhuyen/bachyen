@@ -1,0 +1,66 @@
+.header {
+    a{
+        &:hover{
+            color: $color-a;
+        }
+    }
+    border-top: 5px solid $color-2;
+    background: url('../images/bg-header.jpg');
+    color: $color-a;
+    .time-top {
+        @extend %clearfix;
+        li {
+            float: left;
+            padding: 6px 12px;
+            background: $color-2;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin-left: 1px;
+        }
+    }
+    .menu-top {
+        margin: 0 -15px;
+        .menu {
+            @extend %clearfix;
+            position: relative;
+            float: right;
+            .toggle-menu {
+                cursor: pointer;
+                position: relative;
+                background: $color-2;
+                height: 40px;
+                width: 100%;
+                @include border-radius(3px);
+                border-bottom: 4px solid $color-2hv;
+                margin-left: 1px;
+                line-height: 50px;
+                i {
+                    padding-left: 10px;
+                }
+            }
+            .content-list-menu {
+                li {
+                    float: left;
+                    margin-left: 1px;
+                    @include border-radius(3px);
+                    background: $color-2;
+                    border-bottom: 4px solid $color-2hv;
+                    a {
+                        display: block;
+                        padding: 14px 9px 10px;
+                        font-size: 18px;
+                        font-family: 'Lobster';
+                    }
+                    &:hover {
+                        background: $color-3;
+                        border-bottom: 4px solid $color-4;
+                    }
+                }
+                .active {
+                    background: $color-3;
+                    border-bottom: 4px solid $color-4;
+                }
+            }
+        }
+    }
+}

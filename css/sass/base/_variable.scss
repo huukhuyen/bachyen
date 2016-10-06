@@ -1,0 +1,42 @@
+// **********************************
+//   font-face
+// **********************************
+@font-face {
+  font-family: 'Lobster';
+  src: url('../fonts/VNF-Lobster.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// **********************************
+//   font-family
+// **********************************
+$font-family-body: 'Open Sans', sans-serif;
+$font-title: 'Lobster', sans-serif;
+$font-link: 'Roboto', sans-serif;
+$font-awesome: "FontAwesome";
+// **********************************
+//   COLOR
+// **********************************
+// Brand Color
+$color-1: #8FC0EA;
+$color-2: #3185CB;
+$color-2hv: #2B75B3;
+$color-3: #FF633C;
+$color-4: #E15735;
+$color-5: #FEE6B4;
+$color-6: #FCF5D5;
+$color-7: #8a6436;
+
+// Application Color
+$color-o: #000000;
+$color-a: #ffffff;
+$color-b: #f7f7f7;
+$color-d: #282828;
+$color-e: #d0054e;
+$color-f: #636363;
+$color-g: #838383;
+$color-h: #c6c6c6;
+$color-i: #ff0000;
+$color-j: #8b8b8b;
+$color-k: #070547;
